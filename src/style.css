@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@theme {
+	/* Font */
+	--font-sacramento: "Sacramento", cursive;
+	--font-love-light: "Love Light", cursive;
+}
