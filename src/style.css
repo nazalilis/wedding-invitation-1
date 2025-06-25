@@ -5,3 +5,15 @@
 	--font-sacramento: "Sacramento", cursive;
 	--font-love-light: "Love Light", cursive;
 }
+
+.side-bar li a {
+	@apply btn btn-secondary;
+}
+
+.couple h3 {
+	@apply font-sacramento text-pink-400 text-4xl;
+}
+
+.couple p {
+	@apply text-lg;
+}

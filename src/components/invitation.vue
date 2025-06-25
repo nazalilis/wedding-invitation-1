@@ -1,22 +1,19 @@
 <script setup>
-	import menu from "./menu.vue";
+	import menuList from "./menu-list.vue";
 	import navbar from "./navbar.vue";
+	import sidebar from "./sidebar.vue";
+	import sectionHome from "./s1Home.vue";
 </script>
 
 <template>
 	<div class="drawer drawer-end">
 		<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-		<div class="drawer-content flex flex-col">
+		<div class="relative drawer-content flex flex-col bg-transparent">
 			<navbar />
 			<!-- Page content here -->
-			Content
+			<sectionHome />
 		</div>
-		<div class="drawer-side">
-			<label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-			<ul class="menu bg-base-200 min-h-full w-80 p-4">
-				<menu />
-			</ul>
-		</div>
+		<sidebar />
 	</div>
 </template>
 
