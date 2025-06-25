@@ -1,11 +1,11 @@
 <script setup>
 	import hero from "./components/hero.vue";
-	import home from "./components/home.vue";
+	import invitation from "./components/invitation.vue";
 </script>
 
 <template>
 	<hero />
-	<home />
+	<invitation />
 </template>
 
 <style scoped></style>
