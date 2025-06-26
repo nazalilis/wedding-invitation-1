@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<section id="home" class="hero min-h-screen py-20" style="background-image: url(/wedding-invitation-1/img/bg-pattern.png)">
+	<section id="home" class="hero min-h-screen py-20" style="background-image: url(./wedding-invitation-1/img/bg-pattern.png)">
 		<div class="hero-overlay bg-transparent"></div>
 		<div class="container mx-auto">
 			<div class="text-center p-2">
@@ -22,14 +22,14 @@
 					</div>
 					<div class="avatar">
 						<div class="w-24 h-24 rounded-full">
-							<img src="/wedding-invitation-1/img/pria.webp" />
+							<img :src="'/wedding-invitation-1/img/pria.webp'" />
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center items-center gap-3 p-2">
 					<div class="avatar">
 						<div class="w-24 h-24 rounded-full">
-							<img src="/wedding-invitation-1/img/wanita.webp" />
+							<img :src="'/wedding-invitation-1/img/wanita.webp'" />
 						</div>
 					</div>
 					<div class="text-left">
