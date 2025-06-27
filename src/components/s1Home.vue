@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+	import priaImg from "../assets/img/pria.webp";
+	import wanitaImg from "../assets/img/wanita.webp";
+</script>
 
 <template>
 	<section id="home" class="hero home-section min-h-screen py-20">
@@ -22,14 +25,14 @@
 					</div>
 					<div class="avatar">
 						<div class="w-24 h-24 rounded-full">
-							<img :src="'/wedding-invitation-1/img/pria.webp'" />
+							<img :src="priaImg" />
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center items-center gap-3 p-2">
 					<div class="avatar">
 						<div class="w-24 h-24 rounded-full">
-							<img :src="'/wedding-invitation-1/img/wanita.webp'" />
+							<img :src="wanitaImg" />
 						</div>
 					</div>
 					<div class="text-left">
