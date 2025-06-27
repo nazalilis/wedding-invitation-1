@@ -1,13 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
 @theme {
 	/* Font */
 	--font-sacramento: "Sacramento", cursive;
 	--font-love-light: "Love Light", cursive;
 }
 
+.hero-section {
+	background-image: url(./assets/img/bg.webp);
+}
+
 .side-bar li a {
 	@apply btn btn-secondary;
+}
+
+.home-section {
+	background-image: url(./assets/img/bg-pattern.webp);
 }
 
 .couple h3 {

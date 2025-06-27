@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<section id="home" class="hero home-section min-h-screen py-20" :style="{ backgroundImage: 'url(\'./wedding-invitation-1/img/bg-pattern.png\')' }">
+	<section id="home" class="hero home-section min-h-screen py-20">
 		<div class="hero-overlay bg-transparent"></div>
 		<div class="container mx-auto">
 			<div class="text-center p-2">
