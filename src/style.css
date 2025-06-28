@@ -4,9 +4,15 @@
 @theme {
 	/* Font */
 	--font-sacramento: "Sacramento", cursive;
-	--font-love-light: "Love Light", cursive;
+	--font-work-sans: "Work Sans", sans-serif;
 }
 
+body {
+	font-size: 1.2rem;
+	font-family: "Work Sans", sans-serif;
+}
+
+/* Hero */
 .hero-section {
 	background-image: url(./assets/img/bg.webp);
 }

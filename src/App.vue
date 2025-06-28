@@ -1,6 +1,6 @@
 <script setup>
-	import hero from "./components/hero.vue";
-	import invitation from "./components/invitation.vue";
+	import hero from "./view/hero.vue";
+	import invitation from "./view/invitation.vue";
 </script>
 
 <template>
