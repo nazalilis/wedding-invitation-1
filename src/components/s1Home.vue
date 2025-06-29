@@ -5,8 +5,8 @@
 
 <template>
 	<section id="home" class="hero home-section min-h-screen py-20">
-		<div class="hero-overlay bg-transparent"></div>
-		<div class="container mx-auto">
+		<div class="hero-overlay !bg-transparent"></div>
+		<div class="container mx-auto px-4 md:px-0">
 			<div class="text-center p-2">
 				<h2 class="font-sacramento text-pink-400 font-bold text-6xl">Acara Pernikahan</h2>
 				<h3>Diselenggarakan pada 31 Februari 2026 di Gunungkidul, Yogyakarta</h3>

@@ -5,7 +5,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: "/wedding-invitation-1",
+	base: "/",
 	plugins: [vue(), tailwindcss()],
 	resolve: {
 		alias: {

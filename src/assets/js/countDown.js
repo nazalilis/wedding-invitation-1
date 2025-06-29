@@ -1,5 +1,5 @@
 export default {
-	props: ["year", "month", "date", "hour", "minute", "second", "milisecond", "acara"],
+	props: ["year", "month", "date", "hour", "minute", "second", "milisecond"],
 	data: () => ({
 		displayDays: 0,
 		displayHours: 0,
@@ -24,15 +24,17 @@ export default {
 		},
 	},
 	mounted() {
-		this.showRemaining();
+		this.showRemaining(this.year, this.month, this.date, this.hour, this.minute, this.second, this.milisecond);
 	},
 	methods: {
 		formatNum: (num) => (num < 10 ? "0" + num : num),
-		showRemaining() {
+		showRemaining(year, month, date, hour, minute, second, milisecond) {
 			const timer = setInterval(() => {
 				const now = new Date();
-				const distance = this.end.getTime() - now.getTime();
+				// const distance = this.end.getTime() - now.getTime();
+				const distance = new Date(year, month, date, hour, minute, second, milisecond).getTime() - now.getTime();
 
+				// console.log(this.end);
 				if (distance < 0) {
 					clearInterval(timer);
 					this.expired = true;

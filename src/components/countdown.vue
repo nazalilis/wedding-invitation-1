@@ -34,9 +34,10 @@
 	</div>
 </template>
 
+//
 <script>
 	export default {
-		props: ["year", "month", "date", "hour", "minute", "second", "milisecond", "acara"],
+		props: ["year", "month", "date", "hour", "minute", "second", "milisecond"],
 		data: () => ({
 			displayDays: 0,
 			displayHours: 0,
@@ -64,21 +65,13 @@
 			this.showRemaining();
 		},
 		methods: {
-			// formatNum: (num) => (num < 10 ? "0" + num : num > 99 ? "99+" : num),
-			formatNum(num) {
-				if (num < 10) {
-					return "0" + num;
-				} else if (num > 99) {
-					return "99";
-				} else {
-					return num;
-				}
-			},
+			formatNum: (num) => (num < 10 ? "0" + num : num),
 			showRemaining() {
 				const timer = setInterval(() => {
 					const now = new Date();
 					const distance = this.end.getTime() - now.getTime();
 
+					// console.log(this.end);
 					if (distance < 0) {
 						clearInterval(timer);
 						this.expired = true;

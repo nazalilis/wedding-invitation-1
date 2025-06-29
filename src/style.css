@@ -1,10 +1,16 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+	themes: light --default, dark --prefersdark;
+}
 
 @theme {
 	/* Font */
 	--font-sacramento: "Sacramento", cursive;
 	--font-work-sans: "Work Sans", sans-serif;
+}
+
+html {
+	@apply text-[60%] md:text-[65%] lg:text-[75%];
 }
 
 body {
